@@ -1,0 +1,30 @@
+h1 {
+    text-align: center;
+}
+
+.y-axis-title {
+    font-size: small;
+}
+
+.selections {
+    text-align: center;
+}
+
+
+svg g{
+    display: flex;
+    align-items: center;
+}
+
+
+button {
+    cursor: pointer;
+}
+
+button:hover {
+    background: lightgray;
+}
+
+p {
+    text-align: center;
+}

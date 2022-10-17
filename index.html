@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,18 +10,23 @@
     <script defer src="script.js"></script>
     <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
     <div class="chart">
         <h1>Coffee House Chains</h1>
+        <p> A ranking of selected leading coffee house chains worldwide </p>
         <!-- You will append a SVG here-->
-        <label for="group-by">Group By</label>
-        <select id="group-by">
-          <option value="stores">Stores worldwide</option>
-          <option value="revenue">Revenue in billion U.S. dollars</option>
-        </select>
-        <button>
-            <div id="btn">Sort</div>
-          </button>
-      </div>
+        <div class="selections">
+            <label for="group-by">Group By</label>
+            <select id="group-by">
+                <option value="stores">Stores worldwide</option>
+                <option value="revenue">Revenue in billion U.S. dollars</option>
+            </select>
+            <button>
+                <div id="btn">SORT</div>
+            </button>
+        </div>
+    </div>
 </body>
+
 </html>

@@ -91,7 +91,8 @@ function update(data, type, reverse) {
         .attr("y", d => yScale(d[type]))
         .attr("height", function (d) {
             return height - yScale(d[type]);
-        });
+        })
+        .style("fill", "lightblue");
 
     bars.exit()
         .remove();
@@ -105,8 +106,12 @@ function update(data, type, reverse) {
     let yAxis = d3.axisLeft(yScale);
 
     svg.select(".y-axis").call(yAxis);
-
-    svg.select(".y-axis-title").text([type]);
+    if (type === "stores") {
+        svg.select(".y-axis-title").text("Stores");
+    }
+    else if (type === "revenue") {
+        svg.select(".y-axis-title").text("Billion USD");
+    }
 }
 // CHART UPDATES ---------------------------------------------------------
 // Loading data
