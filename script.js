@@ -1,3 +1,6 @@
+// @author Le Lyu lyule@bc.edu
+// @credit Peiyu Zhong
+
 // create svg with margin convention
 d3.select(".chart").append("svg");
 const margin = { top: 50, right: 20, bottom: 20, left: 50 };
