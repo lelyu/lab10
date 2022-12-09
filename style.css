@@ -11,9 +11,11 @@ h1 {
 }
 
 
-svg g{
-    display: flex;
-    align-items: center;
+svg {
+    display: block;
+    margin: auto;
+    text-align: center;
+
 }
 
 
